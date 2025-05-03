@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="evaluacion-container">
+            <h1>Evaluación Práctica: DIVs</h1>
+            
+            <div class="instrucciones">
+                <h3>Instrucciones:</h3>
+                <p>Completa los siguientes ejercicios sobre DIVs. Escribe tu código HTML y CSS en las áreas correspondientes.</p>
+                <p>Haz clic en "Probar Código" para ver el resultado.</p>
+                <p>¡Buena suerte! 🚀</p>
+            </div>
+    
+            <div class="progreso">
+                <div class="progreso-barra" id="barraProgreso"></div>
+            </div>
+    
+            <!-- Ejercicio 1 -->
+            <div class="ejercicio" id="ejercicio1">
+                <h2>Ejercicio 1: DIV Simple (10 puntos)</h2>
+                <p>Crea un DIV con clase "caja-roja" que tenga:</p>
+                <ul>
+                    <li>200px de ancho</li>
+                    <li>100px de alto</li>
+                    <li>Color de fondo rojo</li>
+                    <li>Centrado horizontalmente</li>
+                </ul>
+                
+                <h3>Tu código HTML:</h3>
+                <textarea class="codigo-area" id="codigo1-html" placeholder="Escribe tu HTML aquí...">
+    <div class="caja-roja"></div></textarea>
+                
+                <h3>Tu código CSS:</h3>
+                <textarea class="codigo-area" id="codigo1-css" placeholder="Escribe tu CSS aquí...">
+    .caja-roja {
+        
+    }</textarea>
+                
+                <button class="boton-probar" onclick="probarCodigo(1)">Probar Código</button>
+                <div class="resultado" id="ejercicio1-resultado"></div>
+                <div class="puntuacion" id="puntuacion1"></div>
+            </div>
+    
+            <!-- Ejercicio 2 -->
+            <div class="ejercicio" id="ejercicio2">
+                <h2>Ejercicio 2: DIVs Anidados (15 puntos)</h2>
+                <p>Crea un DIV contenedor con dos DIVs internos:</p>
+                <ul>
+                    <li>DIV contenedor con clase "contenedor" y borde negro</li>
+                    <li>DIV interno 1 con clase "titulo", texto azul y centrado</li>
+                    <li>DIV interno 2 con clase "subtitulo", texto verde</li>
+                </ul>
+                
+                <h3>Tu código HTML:</h3>
+                <textarea class="codigo-area" id="codigo2-html" placeholder="Escribe tu HTML aquí..."></textarea>
+                
+                <h3>Tu código CSS:</h3>
+                <textarea class="codigo-area" id="codigo2-css" placeholder="Escribe tu CSS aquí..."></textarea>
+                
+                <button class="boton-probar" onclick="probarCodigo(2)">Probar Código</button>
+                <div class="resultado" id="ejercicio2-resultado"></div>
+                <div class="puntuacion" id="puntuacion2"></div>
+            </div>
+    
+            <!-- Ejercicio 3 -->
+            <div class="ejercicio" id="ejercicio3">
+                <h2>Ejercicio 3: Tarjeta de Producto (20 puntos)</h2>
+                <p>Crea una tarjeta de producto usando DIVs con:</p>
+                <ul>
+                    <li>DIV principal con clase "tarjeta"</li>
+                    <li>DIV para imagen con clase "tarjeta-imagen"</li>
+                    <li>DIV para contenido con clase "tarjeta-contenido"</li>
+                    <li>DIV para título con clase "tarjeta-titulo"</li>
+                    <li>DIV para descripción con clase "tarjeta-descripcion"</li>
+                </ul>
+                
+                <div class="nota-ayuda">
+                    💡 Pista: La estructura debe ser tarjeta > (tarjeta-imagen + tarjeta-contenido > (tarjeta-titulo + tarjeta-descripcion))
+                </div>
+                
+                <h3>Tu código HTML:</h3>
+                <textarea class="codigo-area" id="codigo3-html" placeholder="Escribe tu HTML aquí..."></textarea>
+                
+                <h3>Tu código CSS:</h3>
+                <textarea class="codigo-area" id="codigo3-css" placeholder="Escribe tu CSS aquí..."></textarea>
+                
+                <button class="boton-probar" onclick="probarCodigo(3)">Probar Código</button>
+                <div class="resultado" id="ejercicio3-resultado"></div>
+                <div class="puntuacion" id="puntuacion3"></div>
+            </div>
+    
+            <!-- Ejercicio 4 -->
+            <div class="ejercicio" id="ejercicio4">
+                <h2>Ejercicio 4: Layout de 3 Columnas (20 puntos)</h2>
+                <p>Crea un layout de 3 columnas usando Flexbox:</p>
+                <ul>
+                    <li>DIV contenedor con clase "contenedor-flex" usando display: flex</li>
+                    <li>3 DIVs internos con clase "columna"</li>
+                    <li>Espacio entre columnas de 10px</li>
+                    <li>Cada columna con fondo gris claro y padding</li>
+                </ul>
+                
+                <h3>Tu código HTML:</h3>
+                <textarea class="codigo-area" id="codigo4-html" placeholder="Escribe tu HTML aquí..."></textarea>
+                
+                <h3>Tu código CSS:</h3>
+                <textarea class="codigo-area" id="codigo4-css" placeholder="Escribe tu CSS aquí..."></textarea>
+                
+                <button class="boton-probar" onclick="probarCodigo(4)">Probar Código</button>
+                <div class="resultado" id="ejercicio4-resultado"></div>
+                <div class="puntuacion" id="puntuacion4"></div>
+            </div>
+    
+            <!-- Ejercicio 5 -->
+            <div class="ejercicio" id="ejercicio5">
+                <h2>Ejercicio 5: Barra de Navegación (20 puntos)</h2>
+                <p>Crea una barra de navegación con:</p>
+                <ul>
+                    <li>DIV principal con clase "navbar"</li>
+                    <li>DIV para logo con clase "logo"</li>
+                    <li>DIV para enlaces con clase "nav-links"</li>
+                    <li>3 enlaces (a) con clase "nav-link"</li>
+                </ul>
+                
+                <h3>Tu código HTML:</h3>
+                <textarea class="codigo-area" id="codigo5-html" placeholder="Escribe tu HTML aquí..."></textarea>
+                
+                <h3>Tu código CSS:</h3>
+                <textarea class="codigo-area" id="codigo5-css" placeholder="Escribe tu CSS aquí..."></textarea>
+                
+                <button class="boton-probar" onclick="probarCodigo(5)">Probar Código</button>
+                <div class="resultado" id="ejercicio5-resultado"></div>
+                <div class="puntuacion" id="puntuacion5"></div>
+            </div>
+    
+            <!-- Ejercicio 6 -->
+            <div class="ejercicio" id="ejercicio6">
+                <h2>Ejercicio 6: Formulario Completo (15 puntos)</h2>
+                <p>Crea un formulario usando DIVs:</p>
+                <ul>
+                    <li>DIV contenedor con clase "formulario"</li>
+                    <li>DIVs para cada campo con clase "campo"</li>
+                    <li>Labels e inputs dentro de cada campo</li>
+                    <li>Botón de envío</li>
+                </ul>
+                
+                <h3>Tu código HTML:</h3>
+                <textarea class="codigo-area" id="codigo6-html" placeholder="Escribe tu HTML aquí..."></textarea>
+                
+                <h3>Tu código CSS:</h3>
+                <textarea class="codigo-area" id="codigo6-css" placeholder="Escribe tu CSS aquí..."></textarea>
+                
+                <button class="boton-probar" onclick="probarCodigo(6)">Probar Código</button>
+                <div class="resultado" id="ejercicio6-resultado"></div>
+                <div class="puntuacion" id="puntuacion6"></div>
+            </div>
+    
+            <div class="resultado-final" id="resultadoFinal"></div>
+        </div>
+     <script src="script.js"></script>
+</body>
+</html>

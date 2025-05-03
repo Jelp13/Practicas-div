@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.evaluacion-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.instrucciones {
+    background: #e8f6ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid #3498db;
+}
+
+.ejercicio {
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.ejercicio h2 {
+    color: #2980b9;
+    margin-top: 0;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+}
+
+.resultado {
+    border: 2px dashed #95a5a6;
+    min-height: 100px;
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+}
+
+.codigo-area {
+    width: 100%;
+    height: 150px;
+    font-family: monospace;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    resize: vertical;
+}
+
+.boton-probar {
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boton-probar:hover {
+    background: #219a52;
+}
+
+.puntuacion {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+/* Estilos para los ejercicios específicos */
+.ejemplo-resultado {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Ejercicio 1 */
+#ejercicio1-resultado .caja-roja {
+    width: 200px;
+    height: 100px;
+    background: red;
+    margin: 10px auto;
+}
+
+/* Ejercicio 2 */
+#ejercicio2-resultado .contenedor {
+    border: 2px solid #333;
+    padding: 20px;
+}
+
+#ejercicio2-resultado .titulo {
+    font-size: 24px;
+    color: blue;
+    text-align: center;
+}
+
+#ejercicio2-resultado .subtitulo {
+    font-size: 18px;
+    color: green;
+    margin-top: 10px;
+}
+
+/* Ejercicio 3 */
+#ejercicio3-resultado .tarjeta {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+}
+
+#ejercicio3-resultado .tarjeta-imagen {
+    height: 150px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ejercicio3-resultado .tarjeta-contenido {
+    padding: 15px;
+}
+
+#ejercicio3-resultado .tarjeta-titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#ejercicio3-resultado .tarjeta-descripcion {
+    color: #666;
+}
+
+/* Ejercicio 4 */
+#ejercicio4-resultado .contenedor-flex {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#ejercicio4-resultado .columna {
+    flex: 1;
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ejercicio 5 */
+#ejercicio5-resultado .navbar {
+    background: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ejercicio5-resultado .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#ejercicio5-resultado .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+#ejercicio5-resultado .nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Ejercicio 6 */
+#ejercicio6-resultado .formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#ejercicio6-resultado .campo {
+    margin-bottom: 15px;
+}
+
+#ejercicio6-resultado .campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#ejercicio6-resultado .campo input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#ejercicio6-resultado .boton {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.nota-ayuda {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.progreso {
+    background: #e9ecef;
+    height: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progreso-barra {
+    background: #28a745;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+.resultado-final {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.resultado-final.excelente { background: #d4edda; color: #155724; }
+.resultado-final.bien { background: #fff3cd; color: #856404; }
+.resultado-final.regular { background: #f8d7da; color: #721c24; }
